@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Pagos</title>
+    <link rel="stylesheet" href="estilos.css" />
+  </head>
+  <body>
+    <div class="sis">
+      <div class="dash">
+        <div class="hi">
+          <p>¡Hola!</p>
+          <h1>Usuario</h1>
+          <img src="img/usuario.png" alt="perfil" />
+        </div>
+        <div class="adm">
+          <div class="menu">
+            <ul>
+              <li><a href="/sistema.html">Escritorio</a></li>
+              <li><a href="/comisiones.html">Comisiones</a></li>
+              <li><a href="/visitas.html">Visitas</a></li>
+              <li><a href="/pagos.html">Pagos</a></li>
+              <li><a href="/generador.html">Generador de enlace</a></li>
+              <li><a href="#">Ajustes</a></li>
+            </ul>
+          </div>
+          <div class="info">
+            <div class="fil">
+              <div class="d">
+                <form action="">
+                  <select name="opciones" class="sel">
+                    <option value="" selected>Todos los estados</option>
+                    <option value="pendiente">Pendiente</option>
+                    <option value="completado">Completado</option>
+                    <option value="cancelado">Cancelado</option>
+                    <option value="enespera">En espera</option>
+                  <input type="date" id="fecha111"/>
+                  <input type="date" id="fecha222"/>
+                  <button>Filtrar</button>
+                </form>
+                <div class="page">
+                  <label for="">Artículos por página:</label>
+                  <input type="text" value="10">
+              </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="tbpago">
+        <div class="tt5">
+          <h1>PAGOS</h1>
+        </div>
+        <table>
+          <tr>
+            <th>Solicitado en</th>
+            <th>Cantidad</th>
+            <th>Pagado en</th>
+            <th>Estado</th>
+          </tr>
+          <tr>
+            <td>2 de mayo de 2024</td>
+            <td>S/.125.00</td>
+            <td>2 de mayo de 2024</td>
+            <td><p>COMPLETADO</p></td>
+          </tr>
+          <tr>
+            <td>2 de mayo de 2024</td>
+            <td>S/.125.00</td>
+            <td>2 de mayo de 2024</td>
+            <td><p>COMPLETADO</p></td>
+          </tr>
+          <tr>
+            <td>2 de mayo de 2024</td>
+            <td>S/.125.00</td>
+            <td>2 de mayo de 2024</td>
+            <td><p>COMPLETADO</p></td>
+          </tr>
+          <tr>
+            <td>2 de mayo de 2024</td>
+            <td>S/.125.00</td>
+            <td>2 de mayo de 2024</td>
+            <td><p>COMPLETADO</p></td>
+          </tr>
+          <tr>
+            <td>2 de mayo de 2024</td>
+            <td>S/.125.00</td>
+            <td>2 de mayo de 2024</td>
+            <td><p>COMPLETADO</p></td>
+          </tr>
+          <tr>
+            <td>2 de mayo de 2024</td>
+            <td>S/.125.00</td>
+            <td>2 de mayo de 2024</td>
+            <td><p>COMPLETADO</p></td>
+          </tr>
+        </table>
+      </div>
+    </div>
+    <script>
+      var today = new Date();
+      var yyyy = today.getFullYear();
+      var mm = String(today.getMonth() + 1).padStart(2, "0");
+      var dd = String(today.getDate()).padStart(2, "0");
+      var formattedDate = yyyy + "-" + mm + "-" + dd;
+      document.getElementById("fecha111").value = formattedDate;
+      document.getElementById("fecha222").value = formattedDate;
+    </script>
+  </body>
+</html>

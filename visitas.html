@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="estilos.css" />
+  </head>
+  <body>
+    <div class="sis">
+      <div class="dash">
+        <div class="hi">
+          <p>¡Hola!</p>
+          <h1>Usuario</h1>
+          <img src="img/usuario.png" alt="perfil" />
+        </div>
+        <div class="adm">
+          <div class="menu">
+            <ul>
+              <li><a href="/sistema.html">Escritorio</a></li>
+              <li><a href="/comisiones.html">Comisiones</a></li>
+              <li><a href="/visitas.html">Visitas</a></li>
+              <li><a href="/pagos.html">Pagos</a></li>
+              <li><a href="/generador.html">Generador de enlace</a></li>
+              <li><a href="#">Ajustes</a></li>
+            </ul>
+          </div>
+          <div class="info">
+            <div class="fil">
+              <div class="d">
+                <form action="">
+                  <select name="opciones" class="sel">
+                    <option value="" selected>Todos los estados</option>
+                    <option value="noconvertida">No convertida</option>
+                    <option value="convertida">Convertida</option>
+                  <input type="date" id="fecha11"/>
+                  <input type="date" id="fecha22"/>
+                  <button>Filtrar</button>
+                </form>
+                <div class="page">
+                  <label for="">Artículos por página:</label>
+                  <input type="text" value="10">
+              </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="tbvisi">
+        <div class="tt4">
+          <h1>VISITAS</h1>
+        </div>
+        <table>
+          <tr>
+            <th>Fecha</th>
+            <th>Enlace</th>
+            <th>Origen</th>
+            <th>Estado</th>
+          </tr>
+          <tr>
+            <td>02 de Mayo del 2024</td>
+            <td><a href="https://www.otro-ejemplo-mas-largo.com/dolor/sit/amet/consectetur/adipiscing/elit">https://pruebas.tiendakrear3d.com/producto/bambu-lab-pla-pack-cmyk?ref=2080	</a></td>
+            <td>Origen A</td>
+            <td><p>NO CONVERTIDA</p></td>
+          </tr>
+          <tr>
+            <td>02 de Mayo del 2024</td>
+            <td><a href="https://www.otro-ejemplo-mas-largo.com/dolor/sit/amet/consectetur/adipiscing/elit">https://pruebas.tiendakrear3d.com/producto/bambu-lab-pla-pack-cmyk?ref=2080	</a></td>
+            <td>Origen B</td>
+            <td><p>CONVERTIDA</p></td>
+          </tr>
+        </table>
+      </div>
+    </div>
+    <script>
+        var today = new Date();
+        var yyyy = today.getFullYear();
+        var mm = String(today.getMonth() + 1).padStart(2, "0");
+        var dd = String(today.getDate()).padStart(2, "0");
+        var formattedDate = yyyy + "-" + mm + "-" + dd;
+        document.getElementById("fecha11").value = formattedDate;
+        document.getElementById("fecha22").value = formattedDate;
+      </script>
+  </body>
+</html>

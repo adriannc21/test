@@ -1,0 +1,1326 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+body{
+    margin: 0;
+    padding: 0;
+    background-color: #e6e6e6;
+}
+.cont {
+    overflow: hidden;
+    display: flex;
+    justify-content: center;
+    align-items: center; 
+    background-color: #e6e6e6;
+    font-family: "Roboto", sans-serif;
+}
+/* login */
+.obl{
+    color: #e56119;
+}
+.login,
+.register {
+    flex: 1;
+    box-sizing: border-box;
+    margin: 20px 0px;
+}
+.login {
+    display: flex; 
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+.login .clip{
+    width: 180px;
+    height: 7px;
+    border-radius: 10px 10px 0 0;
+    background-color: #ef6b22;
+}
+.login-f {
+    background-color: white;
+    border-radius: 30px;
+    width: 70%;
+    height: 580px;
+    padding: 20px;
+    padding-top: 0;
+    display: flex;
+    flex-direction: column; 
+    justify-content: flex-start;
+    align-items: center;
+    margin-top: 0; 
+}
+
+.login-f h1 {
+    text-align: center;
+    background-color: #ef6b22;
+    color: white;
+    padding: 10px 30px;
+    margin-top: 0;
+    font-size: 25px;
+    margin-bottom: 30px;
+    border-radius: 0 0 10px 10px;
+    box-shadow: 0 5px 5px 2px rgb(192, 192, 192);
+}
+
+.login-f form{
+    width: 90%;
+    display: flex;
+    flex-direction: column;
+    padding: 0 40px;
+    font-size: 12px;
+}
+.login-f form label:nth-of-type(1),
+.login-f form label:nth-of-type(2) {
+    margin-left: 20px;
+    font-weight: 500;
+    margin-bottom: 10px;
+    color: #555454;
+}
+.login-f form input {
+    border-radius: 20px;
+    padding: 10px 20px;
+    border: 1px solid rgb(192, 192, 192);
+    margin-bottom: 25px;
+}
+.login-f form input:focus {
+    outline: none;
+}
+.login-f form button[type="submit"] {
+    background-color: #ef6b22;
+    border: 0;
+    border-radius: 30px;
+    color: white;
+    width: 180px;
+    height: 40px;
+    margin: 0 auto;
+    padding: 0;
+    text-align: center; 
+    line-height: 40px; 
+    font-size: 14px;
+    font-weight: 600;
+    cursor: pointer;
+}
+.login-f form button[type="submit"]:hover {
+    background-color: #ff470f;
+}
+.login-f form label:nth-of-type(3) {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-weight: 500;
+    color: #555454;
+    height: 50px;
+}
+.login-f form label:nth-of-type(3) input[type="checkbox"] {
+    margin-top: 23px;
+}
+.login-f form .r-pass{
+    text-align: center;
+    text-decoration: none;
+    color: black;
+    font-weight: 700;
+}
+.login-f form hr {
+    border: 0;
+    height: 2px;
+    background-color: #cccccc;
+    width: 60%;
+    margin: 20px auto;
+}
+
+.login-f .other{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+.login-f .other button{
+    width: 230px;
+    margin-bottom: 20px;
+    font-weight: 400;
+    font-size: 15px;
+    padding: 10px;
+    border-radius: 20px;
+    border: 1px solid rgb(201, 201, 201);
+    background-color: white;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.login-f .other button.btn-g:hover {
+    background-color: #ff8888;
+    color: white;
+}
+
+.login-f .other button.btn-fb:hover {
+    background-color: #7998ff;
+    color: white;
+}
+
+
+.login-f .other button img {
+    width: 20px;
+    height: 20px;
+    margin-right: 10px;
+}
+
+/* registro */
+.register {
+    background-color: transparent;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.register-f{
+    background-color: white;
+    width: 65%;
+    padding: 60px;
+    border-radius: 30px;
+    overflow: hidden;
+}
+.register-f .clip2{
+    position: absolute;
+    margin-top: 30px;
+    height: 45px;
+    width: 6px;
+    border-radius: 20px;
+    background-color: #ef6b22;
+}
+.register-f h1{
+    font-size: 40px;
+    color: #ef6b22;
+    margin-left: 15px;
+    
+}
+.register-f form {
+    display: flex;
+    flex-direction: column;
+}
+
+.register-f form .frc{
+    display: flex;
+    flex-direction: row;
+}
+.register-f form .frc .rc {
+    flex: 1;
+    display: flex;
+    flex-direction: column;  
+}
+
+.register-f form .frc .rc:first-child {
+    margin-right: 20px;
+}
+.register-f form label{
+    margin-left: 20px;
+    font-weight: 600;
+    margin-bottom: 10px;
+    font-size: 12px;
+    color: #555454;
+}
+.register-f form input{
+    border-radius: 20px;
+    padding: 10px 20px;
+    border: 1px solid rgb(192, 192, 192);
+    margin-bottom: 25px;
+}
+
+.register-f form input:focus{
+    outline: none;
+}
+
+.register-f form .frc .rc:nth-child(2) label:nth-child(5) {
+    display: flex;
+    align-items: center;
+    margin-top: 15px;
+    margin-left: 0;
+    padding-right: 20px;
+}
+
+.register-f form .frc .rc:nth-child(2) label:nth-child(5) input[type="checkbox"] {
+    margin-right: 10px;
+    margin-top: 20px;
+}
+
+.register-f form button{
+    background-color: #ef6b22;
+    border: 0;
+    border-radius: 30px;
+    color: white;
+    width: 180px;
+    height: 40px;
+    margin: 30px auto;
+    padding: 0;
+    text-align: center; 
+    line-height: 40px; 
+    font-size: 14px;
+    font-weight: 600;
+    cursor: pointer;
+}
+.register-f form button[type="submit"]:hover {
+    background-color: #ff470f;
+}
+/* sistema */
+.sis{
+    width: 100%;
+    height: auto;
+    background-color: #e6e6e6;
+    display: flex;
+    flex-direction: column;
+    padding: 20px 0;
+    font-family: "Roboto", sans-serif;
+}
+
+.sis .dash{
+   display: flex;
+   margin-bottom: 30px;
+}
+
+.sis .dash .hi {
+    background-color: white;
+    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    padding: 0 120px;
+    border-radius: 0 20px 20px 0;
+    margin-right: 60px;
+    min-height: 270px;
+}
+.sis .dash .hi p,
+.sis .dash .hi h1{
+    margin: 0;
+    color: #213337;
+}
+.sis .dash .hi p{
+    font-weight: 700;
+}
+.sis .dash .hi h1{
+    font-weight: 900;
+}
+
+
+.sis .dash .hi img{
+    margin-top: 20px;
+    width: 100px;
+    height: 100px;
+}
+.sis .dash .adm{
+    width: 100%;
+}
+.sis .dash .adm .menu ul {
+    flex-wrap: wrap;
+    list-style-type: none; 
+    display: flex;
+    flex-direction: row;
+    margin-top: 5px;
+    padding: 0;
+}
+
+.sis .dash .adm .menu ul li a{
+    text-decoration: none;
+    color: black;
+    padding: 5px 20px;
+    background-color: white;
+    border-radius: 10px 10px 0 0;
+    margin-right: 5px;
+    font-size: 14px;
+}
+.sis .dash .adm .menu ul li a:focus{
+    background-color: #ef6b22;
+    color: white;
+    
+}
+.sis .info{ 
+    display: flex;
+}
+
+.sis .info .s{
+    display: flex;
+    flex-direction: column;
+    height: 225px;
+    margin-bottom: 0;
+    margin-right: 20px;
+}
+.sis .info .s .total {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: #ef6b22;
+    color: white;
+    text-align: center;
+    width: 450px;
+    height: 96px;    
+    border-radius: 10px;
+    padding-top: 10px;
+    margin-bottom: 10px;   
+}
+
+.sis .info .s .total p,
+.sis .info .s .total h1{
+    margin: 0;
+}
+.sis .info .s .total p{
+    font-size: 12px;
+}
+.sis .info .s .total h1{
+    font-weight: 900;
+    font-size: 45px;
+}
+.sis .info .s .tb{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    background-color: white;
+    width: 350px;
+    height: 120px;
+    border-radius: 10px;
+    padding: 10px 50px;
+}
+.sis .info .s .tb table{
+    border-collapse: collapse;
+}
+.sis .info .s .tb table tr:not(:last-child){
+    border-bottom: 1px solid #d5d5d5;
+}
+.sis .info .s .tb table th,
+.sis .info .s .tb table td{
+    padding: 5px 0;
+    font-size: 14px;
+}
+.sis .info .s .tb table th{
+    text-align: left;
+    font-weight: 500;
+}
+.sis .info .s .tb table td{
+    text-align: right;
+}
+
+.sis .info .d {
+    display: flex;
+    flex-wrap: wrap;
+    height: 225px;
+    justify-content: space-between;
+    align-items: flex-start;
+    width: 60%;
+    margin-right: 20px;
+  }
+  
+.sis .info .d > div {
+    width: calc(50% - 10px);
+    margin-bottom: 15px;
+    text-align: center;
+    background-color: white;
+    border-radius: 15px;
+    padding-top: 22px;
+    padding-bottom: 22px;
+}
+  .sis .info .d > div p ,
+  .sis .info .d > div h1 {
+    margin: 0;
+}
+.sis .info .d > div p {
+    font-size: 12px;
+}
+.sis .info .d > div h1 {
+    font-size: 40px;
+    font-weight: 900;
+}
+
+.sis .comi {
+    background-color: white;
+    width: 100%;
+    display: flex;
+    margin-bottom: 20px;
+    flex-direction: row;
+    min-height: 250px; 
+    overflow-y: auto;
+}
+
+.sis .comi .tt {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 0 100px;
+}
+.sis .comi .tt p,
+.sis .comi .tt h1{
+    margin: 0;
+}
+.sis .comi .tt p{
+    font-weight: 500;
+    font-size: 22px;
+}
+
+.sis .comi .tt h1{
+    font-weight: 1000;
+    color: #ef6b22;
+    font-family: "Montserrat", sans-serif;
+    font-size: 40px;
+}
+.sis .comi table{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: left;
+    text-align: left;
+    margin-left: 20px;
+    height: auto;
+    border-collapse: collapse;
+    flex-grow: 1;
+    padding-top: 20px;
+}
+.sis .comi table th:not(:last-child){
+    padding-right: 210px;
+}
+.sis .comi table tr td:not(:last-child){
+    padding-right: 210px;
+}
+.sis .comi table tr td:last-child{
+    padding-right: 100px;
+}
+.sis .comi table tr:not(:first-child):not(:last-child) {
+    border-bottom: 1px solid #d5d5d5;
+}
+
+.sis .comi table tr td p{
+    color:white;
+    background-color: #ef6b22;
+    text-align: center;
+    padding: 5px 15px;
+    border-radius: 5px;
+}
+
+.sis .visi {
+    background-color: white;
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    min-height: 250px;
+    overflow-y: auto;
+}
+.sis .visi .tt2 {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 0 100px;
+}
+.sis .visi .tt2 p,
+.sis .visi .tt2 h1{
+    margin: 0;
+}
+.sis .visi .tt2 p{
+    font-weight: 500;
+    font-size: 22px;
+}
+
+.sis .visi .tt2 h1{
+    font-weight: 1000;
+    color: #ef6b22;
+    font-family: "Montserrat", sans-serif;
+    font-size: 40px;
+}
+.sis .visi table{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: left;
+    text-align: left;
+    height: auto;
+    margin-left: 20px;
+    border-collapse: collapse;
+    flex-grow: 1;
+    padding-top: 20px;
+}
+
+.sis .visi table tr td:not(:last-child),
+.sis .visi table tr th:not(:last-child){
+    padding-right: 210px;
+    padding-bottom: 20px;
+    padding-top: 20px;
+}
+.sis .visi table tr td:last-child{
+    padding-right: 200px;
+}
+.sis .visi table tr:not(:first-child):not(:last-child){
+    border-bottom: 1px solid #d5d5d5;
+}
+.sis .visi table tr td a {
+    color: #ef6b22;
+    text-decoration: underline;
+    text-decoration: none;
+}
+
+/* comisiones */
+.sis .dash .info .fil{
+    width: 100%;
+}
+.sis .dash .info .fil .d{
+    display: flex;
+    align-items: end;
+    width: auto;
+
+}
+.sis .dash .info .fil form{
+    display: flex;
+    width: 200px;
+    flex-direction: column;
+    gap: 15px;
+}
+.sis .dash .info .fil form select{
+    padding: 10px;
+    border: 0;
+    border-radius: 5px;
+    font-family: "Roboto", sans-serif;
+
+}
+.sis .dash .info .fil form select:focus{
+    outline: none;
+    border: none;
+}
+.sis .dash .info .fil form input[type="date"]{
+    border: 0;
+    padding: 10px;
+    border-radius: 5px;
+    font-family: "Roboto", sans-serif;
+    cursor: pointer;
+} 
+.sis .dash .info .fil form input[type="date"]:focus{
+    outline: none;
+    border: none;
+}
+.sis .dash .info .fil form button{
+    background-color: #ef6b22;
+    border: 0;
+    border-radius: 5px;
+    padding: 8px;
+    color: white;
+    font-family: "Roboto", sans-serif;
+    font-size: 14px;
+    font-weight: 500;
+    cursor: pointer;
+}
+.sis .dash .info .fil .page{
+    display: flex;
+    align-items: center;
+    justify-content: right;
+    width: auto;
+    background-color: transparent;
+    font-family: "Roboto", sans-serif;
+    margin-bottom: 0;
+    padding: 0;
+}
+.sis .dash .info .fil .page label{
+    font-size: 14px;
+    font-weight: 500;
+    margin-right: 20px;
+}
+.sis .dash .info .fil .page input{
+    width: 40px;
+    text-align: center;
+    border-radius: 5px;
+    border: 0;
+    padding: 5px;
+}
+.sis .dash .info .fil .page input:focus{
+    outline: none;
+    border: none;
+}
+.sis .tbcomi {
+    background-color: white;
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    min-height: 250px;
+    overflow-y: auto;
+}
+.sis .tbcomi .tt3 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 20%;
+    margin-right: 70px;
+}
+.sis .tbcomi .tt3 h1{
+    font-weight: 900;
+    color: #ef6b22;
+    font-family: "Montserrat", sans-serif;
+    font-size: 40px;
+}
+.sis .tbcomi table{
+    display: flex;
+    align-items: center;
+    justify-content: left;
+    text-align: left;
+    height: auto;
+    border-collapse: collapse;
+    flex-grow: 1;
+    padding-top: 20px;
+}
+.sis .tbcomi table th:not(:last-child){
+    padding-right: 140px;
+} 
+.sis .tbcomi table tr td:not(:last-child){
+    padding-right: 140px;
+    padding-bottom: 20px;
+    padding-top: 20px;
+}
+.sis .tbcomi table tr:not(:first-child):not(:last-child){
+    border-bottom: 1px solid #d5d5d5;
+}
+
+.sis .tbcomi table tr td:last-child p{
+    padding: 10px;
+    color: white;
+    background-color: #0a9488;
+    text-align: center;
+    border-radius: 5px;
+    font-size: 14px;
+}
+
+/* visitas */
+.sis .tbvisi {
+    background-color: white;
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    min-height: 250px;
+    overflow-y: auto;
+}
+.sis .tbvisi .tt4 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 20%;
+    margin-right: 70px;
+}
+.sis .tbvisi .tt4 h1{
+    font-weight: 900;
+    color: #ef6b22;
+    font-family: "Montserrat", sans-serif;
+    font-size: 40px;
+}
+.sis .tbvisi table{
+    display: flex;
+    align-items: center;
+    justify-content: left;
+    text-align: left;
+    height: auto;
+    border-collapse: collapse;
+    flex-grow: 1;
+    padding-top: 20px;
+}
+.sis .tbvisi table tr td:not(:last-child){
+    padding-right: 100px;
+}
+.sis .tbvisi table tr td:nth-child(2){
+    padding-right: 80px;
+}
+.sis .tbvisi table tr:not(:first-child):not(:last-child){
+    border-bottom: 1px solid #d5d5d5;
+}
+.sis .tbvisi table tr td:last-child p{
+    /* margin: 10px auto; */
+    padding: 10px;
+    color: white;
+    background-color: rgb(10, 148, 10);
+    text-align: center;
+    border-radius: 5px;
+    font-size: 14px;
+    text-wrap: nowrap;
+
+}
+.sis .tbvisi table th:not(:last-child){
+    padding-right: 100px;
+}
+
+/* pagos */
+.sis .tbpago {
+    background-color: white;
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    min-height: 250px;
+    overflow-y: auto;
+}
+.sis .tbpago .tt5 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 20%;
+    margin-right: 70px;
+}
+.sis .tbpago .tt5 h1{
+    font-weight: 900;
+    color: #ef6b22;
+    font-family: "Montserrat", sans-serif;
+    font-size: 40px;
+}
+.sis .tbpago table{
+    display: flex;
+    align-items: center;
+    justify-content: left;
+    text-align: left;
+    height: auto;
+    border-collapse: collapse;
+    flex-grow: 1;
+    padding-top: 20px;
+}
+.sis .tbpago table tr td:not(:last-child){
+    padding-right: 240px;
+}
+.sis .tbpago table th:not(:last-child){
+    padding-right: 230px;
+}
+.sis .tbpago table tr:not(:first-child):not(:last-child){
+    border-bottom: 1px solid #d5d5d5;
+}
+.sis .tbpago table tr td:last-child p{
+    padding: 10px;
+    color: white;
+    background-color: #9126d8;
+    text-align: center;
+    border-radius: 5px;
+    font-size: 14px;
+    text-wrap: nowrap;
+}
+.sis .adm .gen{
+    display: flex;
+    flex-direction: column;
+    width: auto;
+    justify-content: end;
+    height: 230px;
+}
+.sis .adm .gen .id span{
+    font-weight: 700;
+}
+.sis .adm .gen .url-principal{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    margin-bottom: 50px;
+}
+.sis .adm .gen .url-principal label{
+    font-weight: 700;
+    margin-right: 20px;
+}
+.sis .adm .gen .url-principal input{
+    border: none;
+    padding: 7px 5px;
+    border-radius: 5px;
+    width: 280px;
+    margin-right: 10px;
+}
+.sis .adm .gen .url-principal input:focus{
+    outline: none;
+    border: none;
+}
+.sis .adm .gen .url-principal button{
+    display: flex;
+    align-items: center;
+    background-color: #ef6b22;
+    border: none;
+    padding: 5px;
+    border-radius: 5px;
+    color: white;
+    cursor: pointer;
+}
+.sis .adm .gen .url-principal button img{
+    background: none;
+    margin-right: 5px;
+    width: 20px;
+    height: 20px;   
+}
+.sis .adm .gen .i{
+    width: 50%;
+    font-size: 14px;
+    color:#893fff;
+    margin: 0;
+}
+
+.sis .gen-2 {
+    display: flex;
+    width: 60%;
+    justify-content: center;
+    align-items: center;
+} 
+.sis .gen-2d{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: white;
+    border-radius: 10px;
+    width: 70%;
+    padding-top: 60px;
+    padding-bottom: 60px;
+    
+}
+.sis .gen-2d .title{
+    font-weight: 700;
+    font-size: 20px;
+    margin-top: 0;
+}
+.sis .gen-2d form{
+    display: flex;
+    flex-direction: column;
+}
+.sis .gen-2d form label{
+    margin-bottom: 10px;
+}
+.sis .gen-2d form input{
+    margin-bottom: 20px;
+    width: 300px;
+    border: none;
+    padding: 7px 5px;
+    border-radius: 5px;
+    margin-right: 10px;
+    box-shadow: 0px 3px 4px 2px rgb(226, 226, 226);
+}
+.sis .gen-2d form input:nth-child(1){
+    margin-bottom: 0;
+}
+.sis .gen-2d form input:focus{
+    outline: none;
+    border: none;
+}
+.sis .gen-2d .copy-url{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.sis .gen-2d form button{
+    display: flex;
+    align-items: center;
+    background-color: #ef6b22;
+    border: none;
+    padding: 5px;
+    border-radius: 5px;
+    color: white;
+    cursor: pointer;
+}
+.sis .gen-2d form button img{
+    background: none;
+    margin-right: 5px;
+    width: 20px;
+    height: 20px; 
+}
+/******************	100rem	1600px	 *****************/ 
+@media only screen and (max-width: 100rem) {
+    .sis .info .s .total {
+        width: 400px;
+    }
+    .sis .info .s .tb{
+        width: 300px;
+    }
+    .sis .comi .tt ,
+    .sis .visi .tt2,
+    .sis .tbcomi .tt3,
+    .sis .tbvisi .tt4,
+    .sis .tbpago .tt5{
+        display: none;
+    }
+    .sis .comi table,
+    .sis .visi table,
+    .sis .tbcomi table,
+    .sis .tbvisi table,
+    .sis .tbpago table{
+        justify-content: center;
+    }
+    .sis .comi table tr td:last-child{
+        padding-right: 50px;
+    }
+    .sis .visi table tr td:last-child{
+        padding-right: 140px;
+    }
+    .sis .dash .hi {
+        margin-right: 20px;
+    }
+    .sis .tbpago table th:not(:last-child){
+        padding-right: 200px;
+    }
+
+}
+/******************	75rem	1200px	 *****************/ 
+@media only screen and (max-width: 75rem) {
+	.register {
+        margin: 0px;
+    }
+    .register-f {
+        width: 70%;
+        padding: 20px;
+    }
+    .register-f form {
+        margin-right: 0px;
+    }
+    .register-f form .frc {
+        flex-direction: column;
+    }
+    .register-f form .frc .rc:first-child {
+        margin-right: 0px;
+    } 
+    .register-f form input{
+        margin-bottom: 10px;
+    }
+    .register-f form .frc .rc:nth-child(2) label:nth-child(5) {
+        margin-top: 0;
+    }
+    .register-f form .frc .rc:nth-child(2) label:nth-child(5) input[type="checkbox"] {
+        margin-top: 10px;
+    }
+    .register-f form button{
+        margin: 0px auto;
+    }
+    .sis .dash .hi{
+        display: none;
+    }
+    .sis .dash .info{
+        justify-content: center;
+        padding-left: 20px;
+        padding-right: 20px;
+    }
+    .sis .info .d {
+        margin-right: 0;
+    }
+    .sis .tbcomi table{
+        padding-left: 10px;
+        padding-right: 10px;
+    }
+    .sis .comi table tr td:not(:last-child){
+        padding-right: 150px;
+    }
+    .sis .visi table tr td:not(:last-child),
+    .sis .visi table tr th:not(:last-child){
+        padding-right: 120px;
+    }
+    .sis .comi table th:not(:last-child){
+        padding-right: 120px;
+    }
+    .sis .dash .adm .menu{
+        padding-left: 20px;
+    }
+    .sis .tbcomi table tr td:not(:last-child){
+        padding-right: 110px;
+    }
+    .sis .tbcomi table th:not(:last-child){
+        padding-right: 60px;
+    }
+    .sis .tbvisi table tr td:not(:last-child){
+        padding-right: 50px;
+    }
+    .sis .tbvisi table tr td:nth-child(2){
+        padding-right: 30px;
+    }
+    .sis .tbvisi table th:not(:last-child){
+        padding-right: 50px;
+    }
+    .sis .tbvisi table tr td:nth-child(2) a{
+        max-width: 450px; 
+        overflow-wrap: break-word;
+        display: inline-block; 
+    }
+    .sis .tbpago table tr td:not(:last-child){
+        padding-right: 140px;
+    }
+    .sis .tbpago table th:not(:last-child){
+        padding-right: 140px;
+    }
+}
+/******************	62rem	992px	 *****************/ 
+@media only screen and (max-width: 62rem) {
+	.cont {
+        flex-direction: column;
+    }
+    .login-f {
+        width: 100%;
+        padding-bottom: 50px;
+    }
+    .register-f {
+        width: 80%;
+        padding-left: 36px;
+        padding-right: 36px;
+        margin-bottom: 40px;
+    }
+    .register-f form {
+        margin-right: 0px;
+    }
+
+    .register-f form input{
+        margin-bottom: 20px;
+    }
+    .register-f form .frc .rc:nth-child(2) label:nth-child(5) input[type="checkbox"] {
+        margin-top: 18px;
+    }
+    .sis .comi table tr td:not(:last-child){
+        padding-right: 100px;
+    }
+    .sis .visi table tr td:not(:last-child),
+    .sis .visi table tr th:not(:last-child){
+        padding-right: 45px;
+    }
+    .sis .comi table,
+    .sis .visi table{
+        margin-left: 0;
+        padding-left: 10px;
+        padding-right: 10px;
+    }
+    .sis .tbcomi table tr td:not(:last-child){
+        padding-right: 60px;
+    }
+    .sis .tbvisi table tr td:not(:last-child){
+        padding-right: 20px;
+    }
+    .sis .tbvisi table tr td:nth-child(2){
+        padding-right: 20px;
+    }
+    .sis .tbvisi table tr td:nth-child(2) a{
+        max-width: 350px; 
+    }
+    .sis .tbvisi table th:not(:last-child){
+        padding-right: 100px;
+    }
+    .sis .tbvisi table th:not(:last-child){
+        padding-right: 20px;
+    }
+    .sis .tbpago table tr td:not(:last-child){
+        padding-right: 100px;
+    }
+    .sis .tbpago table th:not(:last-child){
+        padding-right: 100px;
+    }
+
+}
+/******************	48rem	768px	 *****************/ 
+@media only screen and (max-width: 48rem) {
+    /* .sis .comi table,
+    .sis .visi table{
+        padding-left: 10px;
+        padding-right: 10px;
+    } */
+    .sis .info .s .total {
+        width: 250px;
+    }
+    .sis .info .s .total h1{
+        font-size: 35px;
+    }
+    .sis .info .s{
+        height: 207px;
+    }
+    .sis .info .s .tb{
+        width: 190px;
+        padding-left: 30px;
+        padding-right: 30px;
+
+    }
+    .sis .info .d > div p {
+        font-size: 10px;
+    }
+    .sis .info .d > div h1 {
+        font-size: 30px;
+    }
+    .sis .comi table tr td:not(:last-child){
+        padding-right: 60px;
+    }
+    .sis .comi table th:not(:last-child){
+        padding-right: 60px;
+    }
+    .sis .visi table tr td:not(:last-child),
+    .sis .visi table tr th:not(:last-child){
+        padding-right: 20px;
+    }
+    .sis .comi table tr td:last-child,
+    .sis .visi table tr td:last-child{
+        padding-right: 0px;
+    }
+    .sis .dash .adm .menu ul{
+        margin-bottom: 0px;
+    }
+    .sis .dash .adm .menu ul li{
+        margin-bottom: 20px;
+    }
+    .sis .tbcomi table tr td:not(:last-child){
+        padding-right: 30px;
+    }
+    .sis .tbcomi table th:not(:last-child){
+        padding-right: 30px;
+    }
+
+    /* .sis .tbvisi table tr td:not(:last-child){
+        padding-right: 20px;
+    }
+    .sis .tbvisi table tr td:nth-child(2){
+        padding-right: 20px;
+    } */
+    .sis .tbvisi table tr td:nth-child(2) a{
+        max-width: 250px;
+    }
+    .sis .tbvisi table tr td,
+    .sis .tbvisi table tr td:last-child p{
+        font-size: 11px;
+        padding: 5px;
+    }
+    .sis .tbpago table tr td:not(:last-child){
+        padding-right: 38px;
+    }
+    .sis .tbpago table th:not(:last-child){
+        padding-right: 38px;
+    }
+
+}
+/******************	36rem	576px	 *****************/ 
+@media only screen and (max-width: 36rem) {
+    .login{
+        margin-bottom: 30px;
+        margin-left: 25px;
+        margin-right: 25px;
+    }
+	.login-f {
+        width: 95%;
+    }
+    .register-f{
+        width: 80%;
+        padding: 15px 30px;
+        padding-bottom: 40px;
+    }
+    .register-f h1{
+        font-size: 30px;
+        margin-top: 35px;
+        margin-bottom: 20px;
+    }
+    .sis .info{ 
+        flex-direction: column;
+    }
+    .sis .info .s{
+        margin-right: 0;
+    }  
+    .sis .info .s .total{
+        width: 100%;
+    }
+    .sis .info .s .tb{
+        width: 100%;
+        padding: 10px 0px;
+    }
+    .sis .info .s .tb table th,
+    .sis .info .s .tb table td{
+        text-align: center;
+    }
+    .sis .info .d {
+        margin-top: 10px;
+        margin-right: 0px;
+        width: 100%;
+    }
+    .sis .dash{
+        margin-bottom: 0px;
+    }
+    .sis .comi table tr td:not(:last-child){
+        padding-right: 20px;
+    }
+    .sis .comi table th:not(:last-child){
+        padding-right: 20px;
+    }
+    .sis .comi table tr th{
+        font-size: 14px;
+    }
+    .sis .comi table tr td{
+        font-size: 12px;
+    }
+    .sis .visi table tr td:not(:last-child),
+    .sis .visi table tr th:not(:last-child){
+        padding-right: 20px;
+    }
+    .sis .visi table tr th{
+        font-size: 14px;
+    }
+    .sis .visi table tr td{
+        font-size: 12px;
+    }
+    .sis .visi table tr td:nth-child(2) a{
+        max-width: 200px; 
+        overflow-wrap: break-word;
+        display: inline-block; 
+    }
+    .sis .dash .info .fil .d{
+        margin-bottom: 20px;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+        height: auto;   
+    }
+    .sis .dash .info .fil .d form{
+        margin-bottom: 20px;
+        width: 90%;
+    }
+    .sis .tbcomi table tr td:not(:last-child){
+        padding-right: 20px;
+    }
+    .sis .tbcomi table tr th{
+        font-size: 14px;
+    }
+    .sis .tbcomi table tr td{
+        font-size: 12px;
+    }
+    .sis .tbcomi table th:not(:last-child){
+        padding-right: 10px;
+    }
+    .sis .tbvisi table tr td:nth-child(2) a{
+        max-width: 120px; 
+    }
+    .sis .tbvisi table tr td{
+        font-size: 11px;
+    }
+    .sis .tbvisi table tr td:last-child p{
+        font-size: 8px;
+    }
+    .sis .tbvisi table th:not(:last-child){
+        padding-right: 50px;
+    }
+    .sis .tbvisi table th:not(:last-child){
+        padding-right: 10px;
+    }
+    .sis .tbcomi table tr td:last-child p{
+        font-size: 12px;
+    }
+    .sis .tbpago table tr td:not(:last-child){
+        padding-right: 18px;
+    }
+    .sis .tbpago table th:not(:last-child){
+        padding-right: 18px;
+    }
+    .sis .tbpago table tr td,
+    .sis .tbpago table tr td:last-child p{
+        font-size: 12px;
+    }
+    .sis .tbpago table tr td:last-child p{
+        padding: 5px;
+    }
+
+} 
+/******************	26rem	416px	 *****************/ 
+@media only screen and (max-width: 26rem) {
+    .login{
+        margin-left: 10px;
+        margin-right: 10px;
+    }
+    .login-f {
+        width: 85%;
+    }
+
+    .register-f{
+        width: 77%;
+    }
+    .sis .tbcomi table th:not(:last-child){
+        padding-right: 20px;
+    }
+    .sis .tbvisi table tr td:nth-child(2) a{
+        max-width: 140px; 
+    }
+    .sis .tbvisi table tr td:not(:last-child){
+        padding-right: 10px;
+    }
+    .sis .tbpago table {
+        padding-left: 5px;
+        padding-right: 5px;
+    }
+}

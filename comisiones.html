@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="estilos.css" />
+  </head>
+  <body>
+    <div class="sis">
+      <div class="dash">
+        <div class="hi">
+          <p>¡Hola!</p>
+          <h1>Usuario</h1>
+          <img src="img/usuario.png" alt="perfil" />
+        </div>
+        <div class="adm">
+          <div class="menu">
+            <ul>
+              <li><a href="/sistema.html">Escritorio</a></li>
+              <li><a href="/comisiones.html">Comisiones</a></li>
+              <li><a href="/visitas.html">Visitas</a></li>
+              <li><a href="/pagos.html">Pagos</a></li>
+              <li><a href="/generador.html">Generador de enlace</a></li>
+              <li><a href="#">Ajustes</a></li>
+            </ul>
+          </div>
+          <div class="info">
+            <div class="fil">
+              <!-- <h1>Comisiones</h1> -->
+              <div class="d">
+                <form action="">
+                  <select name="opciones" class="sel">
+                    <option value="" selected>Todos los estados</option>
+                    <option value="pendiente">Pendiente</option>
+                    <option value="pagopendiente">Pago Pendiente</option>
+                    <option value="pagado">Pagado</option>
+                    <option value="noconfirmado">No confirmado</option>
+                    <option value="cancelado">Cancelado</option>
+                    <option value="reembolsado">Reembolsado</option>
+                  </select>
+                  <input type="date" id="fecha1"/>
+                  <input type="date" id="fecha2"/>
+                  <button>Filtrar</button>
+                </form>
+                <div class="page">
+                    <label for="">Artículos por página:</label>
+                    <input type="text" value="10">
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="tbcomi">
+        <div class="tt3">
+          <h1>COMISIONES</h1>
+        </div>
+        <table>
+          <tr>
+            <th>ID</th>
+            <th>Fecha</th>
+            <th>Producto</th>
+            <th>Cantidad</th>
+            <th>Porcentaje</th>
+            <th>Estado</th>
+          </tr>
+          <tr>
+            <td>001</td>
+            <td>02 de Mayo del 2024</td>
+            <td>Camisa</td>
+            <td>S/.125</td>
+            <td>20%</td>
+            <td><p>PAGADO</p></td>
+          </tr>
+          <tr>
+            <td>002</td>
+            <td>02 de Mayo del 2024</td>
+            <td>Pantalón</td>
+            <td>S/.125</td>
+            <td>15%</td>
+            <td><p>PAGADO</p></td>
+          </tr>
+        </table>
+      </div>
+    </div>
+    <script>
+      var today = new Date();
+      var yyyy = today.getFullYear();
+      var mm = String(today.getMonth() + 1).padStart(2, "0");
+      var dd = String(today.getDate()).padStart(2, "0");
+      var formattedDate = yyyy + "-" + mm + "-" + dd;
+      document.getElementById("fecha1").value = formattedDate;
+      document.getElementById("fecha2").value = formattedDate;
+    </script>
+  </body>
+</html>
