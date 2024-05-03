@@ -3,14 +3,14 @@
 body{
     margin: 0;
     padding: 0;
-    background-color: #e6e6e6;
+    background-color: #ebebeb;
 }
 .cont {
     overflow: hidden;
     display: flex;
     justify-content: center;
     align-items: center; 
-    background-color: #e6e6e6;
+    background-color: #ebebeb;
     font-family: "Roboto", sans-serif;
 }
 /* login */
@@ -265,7 +265,7 @@ body{
 .sis{
     width: 100%;
     height: auto;
-    background-color: #e6e6e6;
+    background-color: #ebebeb;
     display: flex;
     flex-direction: column;
     padding: 20px 0;
@@ -287,7 +287,7 @@ body{
     padding: 0 120px;
     border-radius: 0 20px 20px 0;
     margin-right: 60px;
-    min-height: 270px;
+    height: 270px;
 }
 .sis .dash .hi p,
 .sis .dash .hi h1{
@@ -787,6 +787,7 @@ body{
     font-size: 14px;
     text-wrap: nowrap;
 }
+/* generador de enlace */
 .sis .adm .gen{
     display: flex;
     flex-direction: column;
@@ -813,6 +814,7 @@ body{
     border-radius: 5px;
     width: 280px;
     margin-right: 10px;
+    text-align: center;
 }
 .sis .adm .gen .url-principal input:focus{
     outline: none;
@@ -843,7 +845,7 @@ body{
 
 .sis .gen-2 {
     display: flex;
-    width: 60%;
+    width: 65%;
     justify-content: center;
     align-items: center;
 } 
@@ -853,7 +855,7 @@ body{
     align-items: center;
     background-color: white;
     border-radius: 10px;
-    width: 70%;
+    width: 98%;
     padding-top: 60px;
     padding-bottom: 60px;
     
@@ -862,6 +864,7 @@ body{
     font-weight: 700;
     font-size: 20px;
     margin-top: 0;
+    margin-bottom: 40px;
 }
 .sis .gen-2d form{
     display: flex;
@@ -871,16 +874,18 @@ body{
     margin-bottom: 10px;
 }
 .sis .gen-2d form input{
-    margin-bottom: 20px;
-    width: 300px;
+    margin-bottom: 40px;
+    width: 400px;
     border: none;
     padding: 7px 5px;
     border-radius: 5px;
     margin-right: 10px;
     box-shadow: 0px 3px 4px 2px rgb(226, 226, 226);
+    text-align: center;
 }
 .sis .gen-2d form input:nth-child(1){
     margin-bottom: 0;
+    width: 290px;
 }
 .sis .gen-2d form input:focus{
     outline: none;
@@ -889,7 +894,7 @@ body{
 .sis .gen-2d .copy-url{
     display: flex;
     align-items: center;
-    justify-content: center;
+    justify-content: left;
 }
 .sis .gen-2d form button{
     display: flex;
@@ -907,6 +912,64 @@ body{
     width: 20px;
     height: 20px; 
 }
+
+/* ajustes */
+.sis .dash .adm .inf-pago{
+    background-color: rgb(255, 255, 255);
+    margin-top: 30px;
+    width: 650px;
+    height: 500px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    border-radius: 10px;
+}
+.sis .dash .adm .inf-pago h1{
+    text-align: center;
+    font-size: 22px;
+}
+
+.sis .dash .adm .inf-pago form{
+    display: flex;
+    flex-direction: column;
+    padding-left: 20px;
+    padding-right: 20px;
+    width: 350px;
+}
+.sis .dash .adm .inf-pago form label{
+    font-size: 16px;
+    font-weight: 400;
+    text-align: left;
+    margin-bottom: 5px;
+}
+.sis .dash .adm .inf-pago form input{
+    margin-bottom: 20px;
+    border: none;
+    padding: 10px 10px;
+    border-radius: 10px;
+    box-shadow: 0px 3px 4px 2px rgb(226, 226, 226);
+}
+.sis .dash .adm .inf-pago form input:focus{
+    outline: none;
+    border: none;
+}
+.sis .dash .adm .inf-pago form button{
+    background-color: #ef6b22;
+    border: none;
+    padding: 10px 5px;
+    border-radius: 5px;
+    color: white;
+    cursor: pointer;
+    width: 120px;
+    margin: 20px auto;
+}
+/* .sis .dash .adm .inf-pago form input{
+    width: 100%;
+} */
+
+
+  
 /******************	100rem	1600px	 *****************/ 
 @media only screen and (max-width: 100rem) {
     .sis .info .s .total {
@@ -941,6 +1004,10 @@ body{
     .sis .tbpago table th:not(:last-child){
         padding-right: 200px;
     }
+    .sis .gen-2 {
+        width: 80%;
+    }
+
 
 }
 /******************	75rem	1200px	 *****************/ 
@@ -1027,6 +1094,19 @@ body{
     .sis .tbpago table th:not(:last-child){
         padding-right: 140px;
     }
+    .sis .adm .gen{
+        align-items: center;
+    }
+    .sis .adm .gen .i{
+        width: 90%;
+        text-align: center;
+    }
+    .sis .gen-2 {
+        width: 100%;
+    }
+    .sis .dash .adm .inf-pago{
+        margin: auto;
+    }
 }
 /******************	62rem	992px	 *****************/ 
 @media only screen and (max-width: 62rem) {
@@ -1089,6 +1169,9 @@ body{
     }
     .sis .tbpago table th:not(:last-child){
         padding-right: 100px;
+    }
+    .sis .gen-2d form input:nth-child(2){
+        margin-right: 0px;
     }
 
 }
@@ -1166,6 +1249,19 @@ body{
     }
     .sis .tbpago table th:not(:last-child){
         padding-right: 38px;
+    }
+    .sis .adm .gen .url-principal{
+        flex-direction: column;
+        margin-bottom: 15px;
+    }
+    .sis .adm .gen .url-principal label{
+        margin-bottom: 10px;
+    }
+    .sis .adm .gen .url-principal input{
+        margin-bottom: 20px;
+    }
+    .sis .dash .adm .inf-pago{
+        width: 500px;
     }
 
 }
@@ -1295,6 +1391,28 @@ body{
     .sis .tbpago table tr td:last-child p{
         padding: 5px;
     }
+    .sis .adm .gen{
+        margin-top: 30px;
+        margin-bottom: 30px;
+    }
+    .sis .gen-2d form input{
+        width: 320px;
+    }
+    .sis .gen-2d form input:nth-child(1){
+        width: 205px;
+    }
+    .sis .gen-2d{
+        width: 90%;
+    }
+    .sis .dash .adm .inf-pago{
+        width: 400px;
+    }
+    .sis .dash .adm .inf-pago form{
+        width: 300px;
+    }
+    .sis .dash .adm .inf-pago form label{
+        font-size: 12px;
+    }
 
 } 
 /******************	26rem	416px	 *****************/ 
@@ -1322,5 +1440,17 @@ body{
     .sis .tbpago table {
         padding-left: 5px;
         padding-right: 5px;
+    }
+    .sis .gen-2d form input{
+        width: 290px;
+    }
+    .sis .gen-2d form input:nth-child(1){
+        width: 180px;
+    }
+    .sis .dash .adm .inf-pago{
+        width: 340px;
+    }
+    .sis .dash .adm .inf-pago form{
+        width: 280px;
     }
 }
